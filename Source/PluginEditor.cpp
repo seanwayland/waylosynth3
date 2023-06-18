@@ -28,7 +28,7 @@ WayloSynth3AudioProcessorEditor::WayloSynth3AudioProcessorEditor (WayloSynth3Aud
     title.setJustificationType(Justification::horizontallyCentred);
     addAndMakeVisible(&title);
 
-    gainLabel.setText("Gain", NotificationType::dontSendNotification);
+    gainLabel.setText("Gainy", NotificationType::dontSendNotification);
     gainLabel.setJustificationType(Justification::horizontallyCentred);
     addAndMakeVisible(&gainLabel);
 
@@ -37,7 +37,7 @@ WayloSynth3AudioProcessorEditor::WayloSynth3AudioProcessorEditor (WayloSynth3Aud
     gainKnob.setTextBoxStyle(Slider::TextBoxBelow, false, 80, 20);
     addAndMakeVisible(&gainKnob);
 
-    gainAttachment.reset(new AudioProcessorValueTreeState::SliderAttachment(valueTreeState, "gainy", gainKnob));
+    gainAttachment.reset(new AudioProcessorValueTreeState::SliderAttachment(valueTreeState, "gain", gainKnob));
 
     addAndMakeVisible(keyboardComponent);
 }
