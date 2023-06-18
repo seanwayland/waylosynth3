@@ -37,7 +37,7 @@ WayloSynth3AudioProcessorEditor::WayloSynth3AudioProcessorEditor (WayloSynth3Aud
     gainKnob.setTextBoxStyle(Slider::TextBoxBelow, false, 80, 20);
     addAndMakeVisible(&gainKnob);
 
-    gainAttachment.reset(new AudioProcessorValueTreeState::SliderAttachment(valueTreeState, "gain", gainKnob));
+    gainAttachment.reset(new AudioProcessorValueTreeState::SliderAttachment(valueTreeState, "gainy", gainKnob));
 
     addAndMakeVisible(keyboardComponent);
 }
