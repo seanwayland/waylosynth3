@@ -28,7 +28,7 @@ WayloSynth3AudioProcessorEditor::WayloSynth3AudioProcessorEditor (WayloSynth3Aud
     title.setJustificationType(Justification::horizontallyCentred);
     addAndMakeVisible(&title);
 
-    gainLabel.setText("Gainy", NotificationType::dontSendNotification);
+    gainLabel.setText("Gainsy", NotificationType::dontSendNotification);
     gainLabel.setJustificationType(Justification::horizontallyCentred);
     addAndMakeVisible(&gainLabel);
 

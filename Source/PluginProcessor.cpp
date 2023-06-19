@@ -9,6 +9,9 @@
 *
 *******************************************************************************/
 
+
+// sudo xattr -rd com.apple.quarantine *.*
+
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 
